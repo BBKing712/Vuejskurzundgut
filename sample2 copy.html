@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>sample2</title>
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"> </script>
+</head>
+<body>
+    <h2>sample2</h2>
+
+
+
+    <div id="app"> {{ firstName }} {{lastName}} shot first. </div>
+    <div id="app2"> {{ firstName }} {{lastName}} shot last. </div>
+    <script> 
+    "use strict";
+    let vm = new Vue({ el: '#app', data: { firstName : "Han", lastName : "Solo" } })
+    let vm2 = new Vue({ el: '#app2', data: { firstName : "Bernhard", lastName : "Korn" } })
+    </script>
+    
+    
+
+</body>    
+</html>
